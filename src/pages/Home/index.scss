@@ -1,0 +1,23 @@
+.home-page {
+    overflow: scroll;
+    width: 100%;
+    .home-content {
+        width: 100%;
+        overflow: scroll;
+        margin: 10px auto;
+        .item {
+            box-sizing: border-box;
+            margin: 10px 10px;
+            float: left;
+            height: height(100);
+            line-height: height(100);
+            background: #ff9064;
+            @include border(1px,$radius:10px);
+            width: calc(33.33% - 20px);
+            text-align: center; 
+            color: #f0f0f0;
+            font-size: r_px(30);
+            font-weight: bold;
+        }
+    }
+}

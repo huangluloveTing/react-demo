@@ -1,0 +1,55 @@
+$base_size: 750;
+$default-rem-size: 24;
+
+
+@function r_px($size: 12) {
+   @return   $size / $default-rem-size * 1rem;
+}
+
+@function height($height : 44) {
+    @return $height / $base_size * 100vw;
+}
+
+@mixin border($width: 1 , $color:transparent , $style: solid , $radius: 5px) {
+    border: $width $color $style;
+    border-radius: $radius;
+}
+
+@mixin border_top($radius:5px) {
+    border-top-left-radius: $radius;
+    border-top-right-radius: $radius;
+}
+
+@mixin border_bottom($radius: 5px) {
+    border-bottom-left-radius: $radius;
+    border-bottom-right-radius: $radius;
+}
+
+@mixin border_left($radius: 5px) {
+    border-top-left-radius: $radius;
+    border-bottom-left-radius: $radius;
+}
+
+@mixin border_right($radius: 5px) {
+    border-top-right-radius: $radius;
+    border-bottom-right-radius: $radius;
+}
+
+@mixin navi($color:#333 , $px: 34) {
+    font-size: r_px($px);
+    color: $color;
+}
+
+@mixin flex-row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-flow: row;
+}
+
+@mixin flex-column {
+    display: flex;
+    justify-content: space-between;
+    align-items: stretch;
+    flex-flow: column;
+}

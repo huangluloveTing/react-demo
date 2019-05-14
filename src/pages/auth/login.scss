@@ -1,0 +1,28 @@
+.login-page {
+    overflow: scroll;
+    width: fill-aviable;
+    .login-content {
+        padding: 10px;
+        margin: 50px auto;
+        .form-content {
+            @include border(1px , $radius: 6px);
+            overflow: hidden;
+            margin-bottom: 50px;
+        }
+    }
+    .login-register {
+        margin-top: 20px;
+        padding: 10px;
+        @include flex-row();
+        justify-content: center;
+        .not-account {
+            color: $sub_color;
+            font-size: r_px(26);
+        }
+        .register {
+            font-size: r_px(26);
+            background: #fff;
+            color: $f3;
+        }
+    }
+}
