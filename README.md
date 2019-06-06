@@ -1,3 +1,7 @@
+### 创建项目
+#### create-react-app project-name 
+#### npm run eject // 这不是为了将react项目的配置文件暴露
+
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Available Scripts
